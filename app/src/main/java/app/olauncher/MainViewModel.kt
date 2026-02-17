@@ -243,6 +243,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     fun updateHomeAlignment(gravity: Int) {
         prefs.homeAlignment = gravity
+        prefs.appLabelAlignment = gravity
         homeAppAlignment.value = prefs.homeAlignment
     }
 
